@@ -8,6 +8,7 @@ import {
 import { Link } from "react-router-dom";
 import CartSidebar from "./CartSidebar";
 import "./Navbar.css";
+import logo from "../assets/logo.jpg";
 
 function Navbar() {
   const [cartOpen, setCartOpen] = useState(false);
@@ -20,7 +21,7 @@ function Navbar() {
           {/* Logo */}
           <div className="navbar-logo">
             <Link to="/">
-              <img src="/src/assets/logo.jpg" alt="Furniro" />
+              <img src={logo} alt="Furniro" />
             </Link>
             <h3>Furniro</h3>
           </div>
