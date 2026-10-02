@@ -20,7 +20,7 @@ function Navbar() {
           {/* Logo */}
           <div className="navbar-logo">
             <Link to="/">
-              <img src="/src/assets/Furnio_Logo.png" alt="Furniro" />
+              <img src="/src/assets/logo.png" alt="Furniro" />
             </Link>
             <h3>Furniro</h3>
           </div>
