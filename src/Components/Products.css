@@ -1,0 +1,140 @@
+.products-section {
+  width: 100%;
+  padding: 56px 0 80px;
+  background: #ffffff;
+}
+
+.products-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin-bottom: 32px;
+}
+
+.show-more-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.show-more-btn {
+  width: 245px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #b88e2f;
+  color: #b88e2f;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.show-more-btn:hover {
+  background: #b88e2f;
+  color: #ffffff;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 768px) {
+
+  .products-section {
+    padding: 45px 20px 60px;
+  }
+
+  .products-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+  }
+
+  .show-more-container {
+    margin-top: 35px;
+  }
+
+  .show-more-btn {
+    width: 220px;
+    height: 46px;
+    font-size: 15px;
+  }
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 600px) {
+
+  .products-section {
+    padding: 40px 15px 55px;
+  }
+
+  .products-title {
+    font-size: 25px;
+    margin-bottom: 25px;
+  }
+
+  .show-more-container {
+    margin-top: 30px;
+  }
+
+  .show-more-btn {
+    width: 200px;
+    height: 44px;
+    font-size: 14px;
+  }
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+
+  .products-section {
+    padding: 35px 12px 50px;
+  }
+
+  .products-title {
+    font-size: 23px;
+    margin-bottom: 22px;
+  }
+
+  .show-more-container {
+    margin-top: 25px;
+  }
+
+  .show-more-btn {
+    width: 180px;
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+
+/* ================================
+   VERY SMALL MOBILE
+================================ */
+
+@media (max-width: 360px) {
+
+  .products-section {
+    padding: 30px 10px 45px;
+  }
+
+  .products-title {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+
+  .show-more-btn {
+    width: 170px;
+    height: 40px;
+    font-size: 13px;
+  }
+}

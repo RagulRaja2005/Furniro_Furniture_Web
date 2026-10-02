@@ -1,0 +1,470 @@
+/* =========================================
+   SHOP FEATURES
+========================================= */
+
+.shop-features {
+  width: 100%;
+  height: 270px;
+
+  background: #faf3ea;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   FEATURES CONTAINER
+========================================= */
+
+.shop-features-container {
+  width: 92%;
+  max-width: 1334px;
+
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   FEATURE
+========================================= */
+
+.shop-feature {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.shop-feature-icon {
+  width: 60px;
+  height: 60px;
+
+  flex: 0 0 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.shop-feature-icon svg {
+  width: 45px;
+  height: 45px;
+
+  color: #242424;
+
+  stroke-width: 1.7;
+}
+
+
+/* Trophy */
+
+.shop-feature:first-child .shop-feature-icon svg {
+  width: 45px;
+  height: 45px;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.shop-feature-text {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 2px;
+}
+
+
+.shop-feature-text h3 {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(16px, 1.7vw, 25px);
+
+  line-height: 150%;
+
+  font-weight: 600;
+
+  color: #242424;
+
+  white-space: nowrap;
+}
+
+
+.shop-feature-text p {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: clamp(12px, 1.3vw, 20px);
+
+  line-height: 150%;
+
+  font-weight: 500;
+
+  color: #898989;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 1201px) {
+
+  .shop-features-container {
+    width: 92%;
+    max-width: 1334px;
+
+    gap: 20px;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+  .shop-features {
+    height: auto;
+
+    min-height: 270px;
+
+    padding: 60px 30px;
+  }
+
+
+  .shop-features-container {
+    width: 90%;
+
+    max-width: 100%;
+
+    height: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, max-content));
+
+    justify-content: center;
+
+    align-items: center;
+
+    column-gap: 60px;
+
+    row-gap: 40px;
+  }
+
+
+  .shop-feature-text h3 {
+    font-size: 20px;
+  }
+
+
+  .shop-feature-text p {
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .shop-features {
+    padding: 50px 25px;
+  }
+
+  .shop-features-container {
+    column-gap: 35px;
+
+    row-gap: 35px;
+  }
+
+  .shop-feature {
+    gap: 8px;
+  }
+
+  .shop-feature-icon {
+    width: 55px;
+    height: 55px;
+
+    flex: 0 0 55px;
+  }
+
+  .shop-feature-icon svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .shop-feature-text h3 {
+    font-size: 18px;
+  }
+
+  .shop-feature-text p {
+    font-size: 14px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .shop-features {
+    height: auto;
+
+    min-height: 0;
+
+    padding: 45px 20px;
+  }
+
+
+  .shop-features-container {
+    width: 100%;
+
+    height: auto;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 30px;
+  }
+
+
+  .shop-feature {
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 10px;
+  }
+
+
+  .shop-feature-icon {
+    width: 50px;
+    height: 50px;
+
+    flex: 0 0 50px;
+  }
+
+
+  .shop-feature-icon svg {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  .shop-feature-text h3 {
+    font-size: 18px;
+
+    line-height: 27px;
+  }
+
+
+  .shop-feature-text p {
+    font-size: 13px;
+
+    line-height: 20px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE 600px
+========================================= */
+
+@media (max-width: 600px) {
+
+  .shop-features {
+    padding: 40px 15px;
+  }
+
+  .shop-features-container {
+    gap: 26px;
+  }
+
+  .shop-feature {
+    justify-content: flex-start;
+
+    max-width: 320px;
+  }
+
+  .shop-feature-icon {
+    width: 48px;
+    height: 48px;
+
+    flex: 0 0 48px;
+  }
+
+  .shop-feature-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .shop-feature-text h3 {
+    font-size: 17px;
+
+    line-height: 25px;
+  }
+
+  .shop-feature-text p {
+    font-size: 12px;
+
+    line-height: 19px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .shop-features {
+    padding: 40px 15px;
+  }
+
+
+  .shop-features-container {
+    width: 100%;
+
+    gap: 25px;
+  }
+
+
+  .shop-feature {
+    width: 100%;
+
+    max-width: 300px;
+
+    justify-content: flex-start;
+  }
+
+
+  .shop-feature-icon {
+    width: 45px;
+    height: 45px;
+
+    flex: 0 0 45px;
+  }
+
+
+  .shop-feature-icon svg {
+    width: 34px;
+    height: 34px;
+  }
+
+
+  .shop-feature-text h3 {
+    font-size: 16px;
+
+    line-height: 24px;
+  }
+
+
+  .shop-feature-text p {
+    font-size: 12px;
+
+    line-height: 18px;
+  }
+
+}
+
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 360px) {
+
+  .shop-features {
+    padding: 35px 10px;
+  }
+
+
+  .shop-features-container {
+    gap: 22px;
+  }
+
+
+  .shop-feature {
+    max-width: 280px;
+
+    gap: 8px;
+  }
+
+
+  .shop-feature-icon {
+    width: 42px;
+    height: 42px;
+
+    flex: 0 0 42px;
+  }
+
+
+  .shop-feature-icon svg {
+    width: 31px;
+    height: 31px;
+  }
+
+
+  .shop-feature-text h3 {
+    font-size: 15px;
+
+    line-height: 22px;
+  }
+
+
+  .shop-feature-text p {
+    font-size: 11px;
+
+    line-height: 17px;
+  }
+
+}

@@ -1,0 +1,235 @@
+.cart-page-wrapper {
+  width: 100%;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Cart Banner */
+.cart-banner {
+  width: 100%;
+  height: 316px;
+  background: url('../assets/shop-banner.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cart-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.cart-banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.cart-banner-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cart-breadcrumb {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.cart-breadcrumb span {
+  margin: 0 10px;
+}
+
+/* Cart Container */
+.cart-page-container {
+  max-width: 1240px;
+  margin: 70px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.cart-items-section {
+  flex: 2.2;
+  overflow-x: auto; /* Mobile-la table width perusa iruntha scroll aagura facility */
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th {
+  background: #f9f1e7;
+  padding: 15px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.cart-table td {
+  padding: 30px 15px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cart-item-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart-item-img {
+  width: 105px;
+  height: 105px;
+  background: #f9f1e7;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.cart-item-name {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.cart-item-price {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.cart-item-qty {
+  border: 1px solid #9f9f9f;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  width: 45px;
+  text-align: center;
+}
+
+.cart-item-subtotal {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+}
+
+.delete-icon {
+  color: #b88e2f;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* Cart Totals */
+.cart-totals-section {
+  flex: 1;
+  background: #f9f1e7;
+  padding: 40px 30px;
+  height: max-content;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cart-totals-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.totals-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+}
+
+.totals-row span:first-child {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.totals-subtotal-val {
+  color: #9f9f9f;
+  font-size: 16px;
+}
+
+.totals-total-val {
+  color: #b88e2f;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.checkout-btn-cart {
+  border: 1px solid #000;
+  background: transparent;
+  padding: 12px 45px;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.checkout-btn-cart:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Responsive Design for Mobile & Tablets */
+@media (max-width: 992px) {
+  .cart-page-container {
+    flex-direction: column !important; /* Mobile-la mela table, keezha cart totals varum */
+    gap: 40px;
+    padding: 0 15px;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-banner {
+    height: 220px;
+  }
+
+  .cart-banner-content h1 {
+    font-size: 36px;
+  }
+
+  .cart-totals-section {
+    padding: 30px 20px;
+  }
+
+  .cart-totals-section h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .checkout-btn-cart {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  .cart-item-info {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .cart-item-img {
+    width: 80px;
+    height: 80px;
+  }
+}

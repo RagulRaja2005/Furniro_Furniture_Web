@@ -1,0 +1,419 @@
+/* =================================
+   NAVBAR
+   FIGMA: 1440 × 100
+================================= */
+
+.navbar {
+  width: 100%;
+  height: 100px;
+
+  position: relative;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =================================
+   NAVBAR CONTAINER
+================================= */
+
+.navbar-container {
+  position: absolute;
+
+  left: 3.75%;
+  right: 6.94%;
+
+  top: 29%;
+  bottom: 30%;
+
+  width: auto;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.navbar-logo img {
+  width: 50px;
+  height: 50px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+.navbar-logo h3 {
+  margin: 0 0 0 8px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 24px;
+  line-height: 36px;
+
+  font-weight: 700;
+
+  color: #000000;
+
+  white-space: nowrap;
+}
+
+
+/* =================================
+   MENU
+================================= */
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+
+  gap: 70px;
+
+  flex-shrink: 1;
+}
+
+.navbar-menu a {
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  font-weight: 500;
+
+  color: #000000;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+.navbar-menu a:hover {
+  color: #b88e2f;
+}
+
+
+/* =================================
+   ICONS
+================================= */
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  flex-shrink: 0;
+}
+
+.navbar-icons svg {
+  width: 24px;
+  height: 24px;
+
+  color: #000000;
+
+  stroke-width: 1.8;
+
+  cursor: pointer;
+}
+
+.navbar-icons svg:hover {
+  color: #b88e2f;
+}
+
+
+/* =================================
+   CART BUTTON
+================================= */
+
+.navbar-cart-button {
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+
+/* =================================
+   LARGE TABLET
+   993px - 1200px
+================================= */
+
+@media (max-width: 1200px) {
+
+  .navbar-container {
+    left: 25px;
+    right: 25px;
+  }
+
+  .navbar-menu {
+    gap: 40px;
+  }
+
+  .navbar-icons {
+    gap: 20px;
+  }
+}
+
+
+/* =================================
+   TABLET
+   769px - 992px
+================================= */
+
+@media (max-width: 992px) {
+
+  .navbar {
+    height: 80px;
+  }
+
+  .navbar-container {
+    left: 20px;
+    right: 20px;
+
+    top: 15px;
+    bottom: 15px;
+  }
+
+  .navbar-logo img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .navbar-logo h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .navbar-menu {
+    gap: 25px;
+  }
+
+  .navbar-menu a {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .navbar-icons {
+    gap: 15px;
+  }
+
+  .navbar-icons svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+/* =================================
+   MOBILE
+   577px - 768px
+================================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    height: 70px;
+  }
+
+  .navbar-container {
+    position: relative;
+
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+
+    width: 100%;
+    height: 70px;
+
+    padding: 0 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+  }
+
+
+  /* Logo */
+
+  .navbar-logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .navbar-logo h3 {
+    margin-left: 6px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+
+  /* Menu */
+
+  .navbar-menu {
+    gap: 14px;
+
+    margin-left: auto;
+    margin-right: 18px;
+  }
+
+  .navbar-menu a {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+
+  /* Icons */
+
+  .navbar-icons {
+    gap: 10px;
+  }
+
+  .navbar-icons svg {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+
+/* =================================
+   SMALL MOBILE
+   321px - 576px
+================================= */
+
+@media (max-width: 576px) {
+
+  .navbar {
+    height: 65px;
+  }
+
+  .navbar-container {
+    height: 65px;
+
+    padding: 0 12px;
+  }
+
+
+  /* Logo */
+
+  .navbar-logo img {
+    width: 34px;
+    height: 34px;
+  }
+
+  .navbar-logo h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
+  /* Menu */
+
+  .navbar-menu {
+    gap: 9px;
+
+    margin-right: 12px;
+  }
+
+  .navbar-menu a {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+
+  /* Icons */
+
+  .navbar-icons {
+    gap: 7px;
+  }
+
+  .navbar-icons svg {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+
+/* =================================
+   VERY SMALL MOBILE
+   BELOW 360px
+================================= */
+
+@media (max-width: 360px) {
+
+  .navbar {
+    height: 60px;
+  }
+
+  .navbar-container {
+    height: 60px;
+
+    padding: 0 8px;
+  }
+
+
+  /* Logo */
+
+  .navbar-logo img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .navbar-logo h3 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+
+  /* Menu */
+
+  .navbar-menu {
+    gap: 6px;
+
+    margin-right: 8px;
+  }
+
+  .navbar-menu a {
+    font-size: 9px;
+    line-height: 14px;
+  }
+
+
+  /* Icons */
+
+  .navbar-icons {
+    gap: 5px;
+  }
+
+  .navbar-icons svg {
+    width: 15px;
+    height: 15px;
+  }
+}

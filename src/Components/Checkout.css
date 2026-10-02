@@ -1,0 +1,280 @@
+.checkout-wrapper {
+  width: 100%;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Banner */
+.checkout-banner {
+  width: 100%;
+  height: 316px;
+  background: url('../assets/shop-banner.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.checkout-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.checkout-banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.checkout-banner-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.checkout-breadcrumb {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.checkout-breadcrumb span {
+  margin: 0 10px;
+}
+
+/* Main Container */
+.checkout-container {
+  max-width: 1240px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 80px;
+  box-sizing: border-box;
+}
+
+/* Left: Billing Details */
+.billing-section {
+  flex: 1.2;
+  padding: 20px 40px 20px 0;
+  box-sizing: border-box;
+}
+
+.billing-section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.form-group input, .form-group select {
+  height: 75px;
+  border: 1px solid #9F9F9F;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #000;
+}
+
+.form-row-2 {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.form-row-2 .form-group {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+/* Right: Order Summary */
+.order-section {
+  flex: 1;
+  padding: 40px 0;
+  box-sizing: border-box;
+}
+
+.order-summary-header {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.order-item-row .product-name {
+  color: #9F9F9F;
+}
+
+.order-item-row .product-name span {
+  color: #000;
+}
+
+.order-subtotal-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.order-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #D9D9D9;
+  padding-bottom: 30px;
+}
+
+.order-total-row .total-price {
+  color: #B88E2F;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Payment Options */
+.payment-options {
+  font-family: 'Poppins', sans-serif;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #000;
+}
+
+.radio-group.active {
+  font-weight: 500;
+  color: #000;
+}
+
+.radio-group.inactive {
+  color: #9F9F9F;
+}
+
+.payment-desc {
+  color: #9F9F9F;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.privacy-text {
+  color: #000;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.privacy-text span {
+  font-weight: 600;
+}
+
+.place-order-btn {
+  width: 318px;
+  height: 64px;
+  display: block;
+  margin: 0 auto;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.place-order-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* Responsive Design for Mobile & Tablets */
+@media (max-width: 992px) {
+  .checkout-container {
+    flex-direction: column !important; /* Mobile-la billing mela, order summary keezha varum */
+    gap: 40px;
+    padding: 0 15px;
+    margin: 40px auto;
+  }
+  .billing-section {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .checkout-banner {
+    height: 220px;
+  }
+
+  .checkout-banner-content h1 {
+    font-size: 36px;
+  }
+
+  .billing-section h2, .order-summary-header {
+    font-size: 26px;
+  }
+
+  .form-row-2 {
+    flex-direction: column !important; /* Mobile-la side-by-side inputs mela keezha varum */
+    gap: 0;
+  }
+
+  .form-group input, .form-group select {
+    height: 55px !important; /* Mobile-la input height sariya reduce pannapattullathu */
+    font-size: 15px;
+  }
+
+  .place-order-btn {
+    width: 100% !important; /* Mobile-la button full width-ku varum */
+    height: 55px;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,283 @@
+.blog-wrapper {
+  width: 100%;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Banner */
+.blog-banner {
+  width: 100%;
+  height: 316px;
+  background: url('../assets/shop-banner.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.blog-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.blog-banner-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.blog-banner-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.blog-breadcrumb {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.blog-breadcrumb span {
+  margin: 0 10px;
+}
+
+/* Main Container */
+.blog-container {
+  max-width: 1240px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* Left: Posts */
+.blog-posts {
+  flex: 2;
+}
+
+.blog-post {
+  margin-bottom: 60px;
+}
+
+.blog-post-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #9F9F9F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.blog-meta span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.blog-post h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.blog-post p {
+  font-family: 'Poppins', sans-serif;
+  color: #9F9F9F;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.read-more {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+/* Pagination */
+.blog-pagination {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.blog-pagination button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background: #F9F1E7;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blog-pagination button.active {
+  background: #B88E2F;
+  color: #fff;
+}
+
+.blog-pagination button.next-btn {
+  width: 98px;
+}
+
+/* Right: Sidebar */
+.blog-sidebar {
+  flex: 1;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-search {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.sidebar-search input {
+  width: 100%;
+  padding: 15px 40px 15px 15px;
+  border: 1px solid #9F9F9F;
+  border-radius: 10px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.sidebar-search svg {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.sidebar-section {
+  margin-bottom: 50px;
+}
+
+.sidebar-section h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-list li {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  color: #9F9F9F;
+  margin-bottom: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.categories-list li:hover {
+  color: #000;
+}
+
+.recent-post-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.recent-post-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recent-post-info h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.recent-post-info span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #9F9F9F;
+}
+
+/* Responsive Design for Mobile & Tablets */
+@media (max-width: 992px) {
+  .blog-container {
+    flex-direction: column !important; /* Mobile-la mela blog posts, keezha sidebar varum */
+    gap: 40px;
+    padding: 0 15px;
+    margin: 40px auto;
+  }
+
+  .blog-sidebar {
+    padding: 0;
+  }
+
+  .blog-pagination {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-banner {
+    height: 220px;
+  }
+
+  .blog-banner-content h1 {
+    font-size: 36px;
+  }
+
+  .blog-post-img {
+    height: 250px !important; /* Mobile screen-ku sariya image height kurakkapattullathu */
+  }
+
+  .blog-post h2 {
+    font-size: 22px;
+  }
+
+  .blog-pagination button {
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .blog-pagination button.next-btn {
+    width: 75px;
+  }
+}

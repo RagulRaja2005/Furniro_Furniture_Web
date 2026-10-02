@@ -1,0 +1,183 @@
+.hero-section {
+  width: 100%;
+  height: 600px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Image */
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Hero Content */
+
+.hero-content {
+  position: absolute;
+
+  top: 50%;
+  right: 6%;
+
+  transform: translateY(-50%);
+
+  width: 500px;
+
+  padding: 45px;
+
+  background: #fff3e3;
+
+  box-sizing: border-box;
+}
+
+/* Small title */
+
+.hero-small-title {
+  margin: 0 0 10px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  font-weight: 600;
+
+  color: #333333;
+}
+
+/* Main title */
+
+.hero-content h1 {
+  margin: 0 0 15px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 40px;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  color: #b88e2f;
+}
+
+/* Description */
+
+.hero-description {
+  width: 100%;
+
+  margin: 0 0 25px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  font-weight: 400;
+
+  color: #333333;
+}
+
+/* Button */
+
+.hero-button {
+  width: 222px;
+  height: 60px;
+
+  border: none;
+
+  background: #b88e2f;
+
+  color: #ffffff;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background: #9f7826;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+  .hero-section {
+    height: 550px;
+  }
+
+  .hero-content {
+    right: 4%;
+
+    width: 450px;
+
+    padding: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 34px;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+  .hero-section {
+    height: 600px;
+  }
+
+  .hero-image {
+    object-position: center;
+  }
+
+  .hero-content {
+    top: auto;
+    bottom: 25px;
+
+    left: 15px;
+    right: 15px;
+
+    transform: none;
+
+    width: auto;
+
+    padding: 25px;
+  }
+
+  .hero-small-title {
+    font-size: 14px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .hero-button {
+    width: 180px;
+    height: 50px;
+
+    font-size: 14px;
+  }
+
+}
